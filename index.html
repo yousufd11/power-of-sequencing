@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Night Shift: three photographs, two directions. An interactive photo story about going out and coming home.">
+<title>NIGHT SHIFT — The Power of Sequencing</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
+</head>
+<body>
+<header>
+<a href="./" class="wordmark">The Power of Sequencing</a>
+<span>THE POWER OF SEQUENCING</span>
+</header>
+<main>
+<section class="intro">
+<div class="title-line">
+<h1>NIGHT<span>SHIFT</span>
+</h1>
+<div class="intro-note">
+
+<p>Heading out?<br>Or heading home?</p>
+
+</div>
+</div>
+<div class="intro-bottom">
+<p>I took these on my phone.<br>The order makes up the rest.</p>
+
+</div>
+</section>
+<section class="machine" aria-label="Interactive photo stories">
+<aside class="control-panel">
+
+
+
+<div class="version-switch" role="group" aria-label="Choose a story">
+<button data-version="0" aria-pressed="true">
+
+<span>Going out<small>01 / JUST FOR A BIT</small>
+</span>
+</button>
+<button data-version="1" aria-pressed="false">
+
+<span>Coming home<small>02 / NOBODY WANTED TO LEAVE</small>
+</span>
+</button>
+</div>
+
+
+<div class="navigation">
+<button id="previous" disabled aria-label="Previous frame">←</button>
+<button id="next">Next →</button>
+</div>
+<p class="hint">← → keys work too</p>
+
+</aside>
+<div class="viewer">
+<div class="photo-topline">
+<span id="story-version">STORY 01 · JUST FOR A BIT</span>
+
+</div>
+<div class="photo-stage">
+
+<img id="main-photo" src="alone.jpg?v=2" alt="A solo mirror portrait in an elevator, wearing a dark Toronto hoodie.">
+<span id="frame-label">FRAME 01 / 03</span>
+</div>
+<div class="caption-block" aria-live="polite" aria-atomic="true">
+<div>
+<p id="stage">01 — Beginning</p>
+<h2 id="caption-title">Almost stayed home.</h2>
+</div>
+<p id="caption">I was ready to go, but I almost stayed home.</p>
+</div>
+<div class="progress" aria-label="Story progress">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</div>
+</div>
+</section>
+<section class="contact-sheet" aria-label="Sequence overview">
+<div class="section-heading">
+<h2>The three photos</h2>
+<p>Click a photo to view it.</p>
+</div>
+<div id="filmstrip" class="filmstrip">
+</div>
+</section>
+<section class="interpretation" aria-live="polite">
+<div>
+
+<h2>What changed?</h2>
+</div>
+<p id="interpretation">
+</p>
+</section>
+<footer>
+<span>The Power of Sequencing</span>
+<span>Real photos. Made-up nights.</span>
+<a href="#">BACK TO TOP ↑</a>
+</footer>
+<noscript>
+<p>Enable JavaScript to change direction and explore the sequences.</p>
+</noscript>
+</main>
+</body>
+</html>
